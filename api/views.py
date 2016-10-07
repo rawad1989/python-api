@@ -20,7 +20,7 @@ class UserRunList(APIView ):
         userruns= user_run.objects.filter(user=request.user)
 
         serializer = UserRunSerializer(userruns, many=True)
-        return Response(serializer.data)
+        return Response(serializer.data,status=status.HTTP_200_OK)
   
 
   def post(self ,request, format=None):
@@ -57,7 +57,9 @@ class AvgSpeed(APIView):
 class AvgSessionSpeed(APIView):
     def get(self, request, pk, format=None):
         user = request.user
-        userrun=user_run.objects.get(id=pk)
+        #return error 404 if not found
+        get_object_or_404(user_run,id=pk)
+        userrun = user_run.objects.get(id=pk)
         avgsessionspeed = userrun.distance / (float(userrun.runtime) / 3600)
 
         respose = {'AvgSessionSpeed': avgsessionspeed}

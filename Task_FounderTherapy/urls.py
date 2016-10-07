@@ -29,6 +29,7 @@ from rest_framework.authtoken import views as authView
 urlpatterns = [
     #include the main api urls file
     url(r'^api/', include('api.urls')),
+    url(r'^api/login/$', authView.obtain_auth_token),
     url(r'^users/$', views.UserRunList.as_view()),
     url(r'^admin/', admin.site.urls),
     url(r'^api', include('rest_framework.urls', namespace='rest_framework')),

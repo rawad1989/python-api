@@ -1,0 +1,128 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$30000$t4K6PdHleDrb$rB9Zi+mKEnzMRAjkFlJmfyC2vTGbNEQXXTLhWsJ9PP4=",
+        "last_login": "2016-09-29T17:38:13.099Z",
+        "is_superuser": true,
+        "username": "rawad",
+        "first_name": "",
+        "last_name": "",
+        "email": "rawad_riad@hotmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2016-09-25T18:51:57.760Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$30000$UEPCYFbULY1f$4PpjziVsyEdFEgK9pa6kCXkiIWA7TNmPIqL7gq5Tq2w=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "test1",
+        "first_name": "test1",
+        "last_name": "test",
+        "email": "test@123.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2016-09-25T18:55:44.157Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$30000$DCHxz2aeeV7d$e1CFL3K/F0dEfD8twEv4ImrSrusuRIWEdn9MPsDX4TI=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "test2",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2016-09-25T18:55:57.570Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$30000$WTvNsdDvVADK$f9EIJ8NO0AT8fsyWqNxc3nMAQ/D9g2VJUl7B2huY60Y=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "test3",
+        "first_name": "test",
+        "last_name": "test",
+        "email": "test@123.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2016-09-25T18:56:12.951Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "api.user_run",
+    "pk": 19,
+    "fields": {
+        "user": 1,
+        "distance": 100,
+        "runtime": 100
+    }
+},
+{
+    "model": "api.user_run",
+    "pk": 20,
+    "fields": {
+        "user": 2,
+        "distance": 100,
+        "runtime": 3600
+    }
+},
+{
+    "model": "api.user_run",
+    "pk": 21,
+    "fields": {
+        "user": 4,
+        "distance": 10,
+        "runtime": 2600
+    }
+},
+{
+    "model": "api.user_run",
+    "pk": 23,
+    "fields": {
+        "user": 3,
+        "distance": 5,
+        "runtime": 3500
+    }
+},
+{
+    "model": "api.user_run",
+    "pk": 24,
+    "fields": {
+        "user": 3,
+        "distance": 10,
+        "runtime": 2505
+    }
+},
+{
+    "model": "api.user_run",
+    "pk": 25,
+    "fields": {
+        "user": 4,
+        "distance": 10,
+        "runtime": 2000
+    }
+}
+]
